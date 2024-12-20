@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+        <div class="display">
+            <div id="result">0</div>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button onclick="clearDisplay()" id="clear">C</button>
+                <button onclick="setOperator('/')" class="operator">÷</button>
+                <button onclick="setOperator('*')" class="operator">×</button>
+                <button onclick="setOperator('-')" class="operator">-</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="setOperator('+')" class="operator">+</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="appendNumber('.')">.</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+            </div>
+            <div class="row">
+                <button onclick="appendNumber('0')" style="flex: 2;">0</button>
+                <button onclick="appendNumber('.')">.</button>
+                <button onclick="calculate()" class="operator">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
